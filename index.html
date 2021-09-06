@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FBW  |  Young Marrieds Class Zoom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="navigation">
+       
+        <a href="#" class="navlink">Home</a>
+        <a href="#" class="navlink">Who We Are</a>
+        <a href="#" class="navlink">Ministries</a>
+        <a href="#" class="navlink">Give</a>
+        <a href="#" class="navlink">Contact</a>
+
+        
+        
+    </div>
+    <div class="main">
+        <div class="menuicons" id="menubtn">
+            <span class="line1" id="line1"></span>
+            <span class="line2" id="line2"></span>
+            <span class="line3" id="line3"></span>
+        </div>
+        <div class="mobilenav" id="mobilemenu">
+            <a href="#" class="mobilenavlink">Home</a>
+            <a href="#" class="mobilenavlink">Who We Are</a>
+            <a href="#" class="mobilenavlink">Ministries</a>
+            <a href="#" class="mobilenavlink">Give</a>
+            <a href="#" class="mobilenavlink">Contact</a>
+        </div>
+        <h1>If you are unable to meet in person <br>please join us online</h1>
+        <a href="#" class="link">Zoom with us!</a>
+    </div>
+
+    <script>
+        const menubtn = document.querySelector('#menubtn');
+        const mobilemenu = document.querySelector('#mobilemenu');
+        const line1 = document.querySelector('.line1');
+        const line2 = document.querySelector('.line2');
+        const line3 = document.querySelector('.line3');
+
+        menubtn.onclick = function () {
+        mobilemenu.classList.toggle("open");
+        if(mobilemenu.classList.contains("open")) {
+            line1.style.backgroundColor = "black";
+            line2.style.backgroundColor = "black";
+            line3.style.backgroundColor = "black";
+            line2.style.width ="25px"
+        }
+        else{
+            line1.style.backgroundColor = "white";
+            line2.style.backgroundColor = "white";
+            line3.style.backgroundColor = "white";
+            line2.style.width ="10px"
+
+        
+        }
+        
+        }  
+    </script>
+
+   
+    
+</body>
+</html>
